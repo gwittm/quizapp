@@ -5,8 +5,8 @@
 
 .header {
    position: fixed;
-   justify-content: center;
-   top: 0px;
+   justify-content: center
+   margin: 0px;
    z-index: 1;
    width: 100%;
    max-width: 700px;
@@ -18,19 +18,19 @@
 
 body {
     border: 2px solid;
-    margin: 2em, auto;
     color:rgb(91, 91, 215);
-    margin: 20px;
+}
+
+main {
+    margin-top: 100px;
 }
 
 .card__question {
     font-size: 20px;
     text-align: center;
     margin: 0;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
-
-
 
 
 
@@ -53,21 +53,30 @@ body {
     background-color:rgb(211, 211, 232);
     margin-left: 50px;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
-.card__heading {
-    color:rgb(91, 91, 215);
-    font-size: 18px;
-}
 
 .card__bookmark {
     border-radius: 10px;
     border-color:rgb(91, 91, 215);
-    position: relative;
-    top: -80px;
-    right: -300px;
-    font-size: 2em;
+}
 
+.card__answer {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 150px;
+    align-self: center;
+}
+
+.card__tag {
+    border: solid rgb(91, 91, 215);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin: 8px;
 }
 
 
