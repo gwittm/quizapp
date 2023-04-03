@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="8"/>
-        <title>Quiz App</title>
+        <title id="Home">Quiz App</title>
         <link rel="stylesheet" href="./styles.css"/>
     </head>
 
     <body>
-        <header class="header" id="top">
+        <header class="header">
             <h1 class="header__heading">Quizz App</h1>
         </header>
 
@@ -19,9 +19,11 @@
                 What property flips the axes in flexbox?
                 </p>
                 <button class="card__answer">Show answer</button>
+                <p class ="answer__tags">
                 <tag class="card__tag">#HTML</tag>
                 <tag class="card__tag">#flexbox</tag>
                 <tag class="card__tag">#css</tag>
+                </p>
                 </section>
 
             <section class="card">
@@ -47,13 +49,18 @@
                 <tag class="card__tag">#animal-love</tag>
                 <tag class="card__tag">#breakfast</tag>
             </section>
-        <a href="#top" class="button__top">Go to top</a>
         </main>
 
         <footer class="footer">
-            <nav class="footer__home">🏠</nav>
-            <nav class="footer__bookmark">👀</nav>
-            <nav class="footer__aboutme">🙋🏻‍♀️</nav>
+            <a href ="#Home">
+                <button id="home" class="footer__button" onclick="">🏠</button>
+            </a>
+            <a href="#bookmarks">
+                <button id="bookmark" class="footer__button">👀</button>
+            </a>
+            <a href ="#aboutme">
+                <button id="aboutme" class="footer__button">🙋🏻‍♀️</button>
+            </a>
         </footer>
-
+    </section>
     </body>

@@ -1,0 +1,89 @@
+*, *::before, *::after {
+    box-sizing: border-box
+}
+
+
+.header {
+   position: fixed;
+   justify-content: center;
+   top: 0px;
+   z-index: 1;
+   width: 100%;
+   max-width: 700px;
+   background: lightblue;
+   height: 70px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+
+body {
+    border: 2px solid;
+    margin: 2em, auto;
+    color:rgb(91, 91, 215);
+    margin: 20px;
+}
+
+.card__question {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.header__heading {
+    font-family: verdana;
+    text-align: center;
+    color: rgb(91, 91, 215);
+}
+
+
+
+.card {
+    position: relative;
+    border: solid;
+    border-color:rgb(91, 91, 215);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: rgb(91, 91, 215) 0 3px 8px;
+    background-color:rgb(211, 211, 232);
+    margin-left: 50px;
+    max-width: 600px;
+}
+
+.card__heading {
+    color:rgb(91, 91, 215);
+    font-size: 18px;
+}
+
+.card__bookmark {
+    border-radius: 10px;
+    border-color:rgb(91, 91, 215);
+    position: relative;
+    top: -80px;
+    right: -300px;
+    font-size: 2em;
+
+}
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgb(91, 91, 215);
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.footer__button {
+    border: solid;
+    border-color: rgb(211, 211, 232);
+    border-radius: 20%;
+    font-size: 2em;
+}
