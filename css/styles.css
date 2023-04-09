@@ -6,6 +6,7 @@
 @import "/components/header.css";
 @import "component/navigation.css";
 @import "components/button.css";
+@import "components/profile.css";
 
 
 .header {
@@ -109,8 +110,22 @@ main {
     background-color: rgb(91, 91, 215);
 }
 
+.footer__button-current {
+    background-color: grey;
+}
+
 .card__answer:hover{
     background-color: transparent;
     color:grey;
     text-decoration: underline;
+}
+
+.profile-icon{
+    height: 200px;
+    width: 100px;
+    margin: -5px;
+}
+
+.about-max{
+    list-style-type: square;
 }
