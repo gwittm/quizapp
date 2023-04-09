@@ -2,10 +2,15 @@
     box-sizing: border-box
 }
 
+@import "components/card.css";
+@import "/components/header.css";
+@import "component/navigation.css";
+@import "components/button.css";
+
 
 .header {
    position: fixed;
-   justify-content: center
+   justify-content: center;
    margin: 0px;
    z-index: 1;
    width: 100%;
@@ -13,8 +18,8 @@
    background: lightblue;
    height: 70px;
    border-bottom-left-radius: 20px;
-   border-bottom-right-radius: 20px;
-}
+   border-bottom-right-radius: 20px; }
+
 
 body {
     border: 2px solid;
@@ -33,13 +38,11 @@ main {
 }
 
 
-
 .header__heading {
     font-family: verdana;
     text-align: center;
     color: rgb(91, 91, 215);
 }
-
 
 
 .card {
@@ -59,8 +62,12 @@ main {
 
 
 .card__bookmark {
-    border-radius: 10px;
-    border-color:rgb(91, 91, 215);
+    position: absolute;
+    top: -12px;
+    right:20px;
+    background-color:transparent;
+    border-color: transparent;
+    cursor: pointer;
 }
 
 .card__answer {
@@ -69,6 +76,7 @@ main {
     border-radius: 10px;
     width: 150px;
     align-self: center;
+    cursor: pointer;
 }
 
 .card__tag {
@@ -80,19 +88,29 @@ main {
 }
 
 
-.footer {
+.nav__footer {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    background-color: rgb(91, 91, 215);
+    background-color: rgb(211, 211, 232);
     padding: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    flex-wrap: wrap;
 }
 
 .footer__button {
-    border: solid;
-    border-color: rgb(211, 211, 232);
-    border-radius: 20%;
-    font-size: 2em;
+    background-color: transparent;
+    border-color: white;
+    cursor: pointer;
+}
+
+.footer__button:hover{
+    background-color: rgb(91, 91, 215);
+}
+
+.card__answer:hover{
+    background-color: transparent;
+    color:grey;
+    text-decoration: underline;
 }
