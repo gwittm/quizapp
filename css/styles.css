@@ -86,6 +86,36 @@ main {
     cursor: pointer;
 }
 
+.card__answer__toggle1{
+    display: none;
+    background-color: rgb(91, 91, 215);
+    color:rgb(211, 211, 232);
+}
+
+.card__answer__toggle2{
+    display: none;
+    background-color: rgb(91, 91, 215);
+    color:rgb(211, 211, 232);
+}
+.card__answer__toggle3{
+    display: none;
+    background-color: rgb(91, 91, 215);
+    color:rgb(211, 211, 232);
+}
+
+.visible{
+    display: block;
+    align-self: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid rgb(91, 91, 215);
+    background-color: lightgray;
+    color: rgb(91, 91, 215);
+}
+
+
+
 .card__tag {
     border: solid rgb(91, 91, 215);
     padding: 5px;
@@ -165,13 +195,13 @@ main {
 
 
 
-* The switch - the box around the slider */
+/* * The switch - the box around the slider */
 .switch {
  /*  position: relative;
   display: inline-block; */
   height: 10px;
-  widht: 30px;
-}
+  width: 30px;
+} */
 
 /* Hide default HTML checkbox */
 .switch input {
