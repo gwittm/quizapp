@@ -1,0 +1,289 @@
+*, *::before, *::after {
+    box-sizing: border-box
+}
+
+@import "components/card.css";
+@import "/components/header.css";
+@import "component/navigation.css";
+@import "components/button.css";
+@import "components/profile.css";
+
+
+.header {
+   position: fixed;
+   justify-content: center;
+   margin: 0px;
+   z-index: 1;
+   width: 100%;
+   max-width: 700px;
+   background: lightblue;
+   height: 70px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px; }
+
+
+body {
+    background-color: white;
+    border: 2px solid;
+    color:rgb(91, 91, 215);
+}
+
+body.dark{
+    background-color: rgb(50, 51, 58);
+    color: white;
+  }
+
+main {
+    margin-top: 100px;
+}
+
+.card__question {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    flex-wrap: wrap
+}
+
+
+.header__heading {
+    font-family: verdana;
+    text-align: center;
+    color: rgb(91, 91, 215);
+}
+
+
+.card {
+    position: relative;
+    border: solid;
+    border-color:rgb(91, 91, 215);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: rgb(91, 91, 215) 0 3px 8px;
+    background-color:rgb(211, 211, 232);
+    margin-left: 50px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card__bookmark {
+    position: absolute;
+    top: -12px;
+    right:20px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+
+.ribbon{
+    width: 0px;
+    height: 35px;
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+    border: solid 15px lightslategray;
+    border-bottom: solid 15px transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }  
+
+  .choose {
+    width: 0px;
+    height: 35px;
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+    border: solid 15px rgb(91, 91, 215);
+    border-bottom: solid 15px transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+.card__answer {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 150px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.card__answer__toggle1{
+    display: none;
+    background-color: rgb(91, 91, 215);
+    color:rgb(211, 211, 232);
+}
+
+.card__answer__toggle2{
+    display: none;
+    background-color: rgb(91, 91, 215);
+    color:rgb(211, 211, 232);
+}
+
+.card__answer__toggle3{
+    display: none;
+    background-color: rgb(91, 91, 215);
+    color:rgb(211, 211, 232);
+}
+
+.visible{
+    display: block;
+    align-self: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid rgb(91, 91, 215);
+    background-color: lightgray;
+    color: rgb(91, 91, 215);
+}
+
+
+
+.card__tag {
+    border: solid rgb(91, 91, 215);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin: 8px;
+}
+
+
+.nav__footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgb(211, 211, 232);
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.footer__button {
+    background-color: transparent;
+    border-color: white;
+    cursor: pointer;
+}
+
+.footer__button:hover{
+    background-color: rgb(91, 91, 215);
+}
+
+.footer__button-current {
+    background-color: grey;
+}
+
+.card__answer:hover{
+    background-color: transparent;
+    color:grey;
+    text-decoration: underline;
+}
+
+.profile-icon{
+    height: 80px;
+    width: 80px;
+}
+
+.about__article{
+    border: dotted 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.icon__and__name{
+    border: dotted 2px;
+    padding: 10px;
+    margin: 10px;
+    display: flexbox;
+    flex-direction: row;
+}
+
+.flex__item2 {
+    align-self: right;
+}
+
+.counter__box{
+    border: dotted 2px;
+    padding: 10px;
+    margin: 10px;
+    display: flexbox;
+    justify-content:right
+}
+
+.settings{
+    border: dotted 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+/* * The switch - the box around the slider */
+.switch {
+ /*  position: relative;
+  display: inline-block; */
+  height: 10px;
+  width: 30px;
+} */
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 10px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

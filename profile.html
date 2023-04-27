@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="8"/>
+        <title id="Home">Quiz App</title>
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <script src="./js/index.js">defer</script>
+    </head>
+
+    <body data-js="body">
+        <header class="header">
+            <h1 class="header__heading">Quizz App</h1>
+        </header>
+
+        <main>
+            <header>
+            <section class="icon__and__name">  <svg class="profile-icon flex__item1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+              </svg>
+              <h2 class="max__doe flex__item2">Max Doe</h2>
+            </section>
+            </header>
+
+            <section class="about__article">
+                <h3 class="about_max">About me</h3>
+                <article>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </article>
+            </section>
+
+            <section class="counter__box">
+                <form class="counter_questions"><svg class="icon_question" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+                  </svg><p class="zahlen">5</p></form>
+                <form class="counter_bookmarks"><svg class="icon_bookmark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                    <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
+                  </svg><p class="zahlen">1</p></form>
+            </section>
+
+           <!--  <section class="settings">
+                <h3 class="settings_title">Settings</h3>
+                <label class="switch" data-js="toggle__button">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label> -->
+
+
+                <p class="mode">Dark Mode</p>
+                <label class="switch_for_dark">
+                 <input type="checkbox">
+                 <span></span> 
+             </label>
+             </p>
+         </section>
+
+
+     </main>
+
+
+     <footer class="nav__footer">
+        <footer class="nav__footer">
+
+            <a href="/index.html">
+            <button class="footer__button"><svg class="footer__button" xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+              </svg>
+            </button>
+            </a> 
+
+            <a href="/bookmarks.html">
+                <button type="button" class="footer__button">
+                    <svg class xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 384 512"> <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"/>
+                    </svg>
+                </button>
+                </a>
+    
+                <a href="/profile.html">
+                <button type="button" class="profile footer__button footer__button-current">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/>
+                    </svg>
+                    </button>
+                </a>
+
+
+        
+    </footer>
+
+        
+     
+ </body>

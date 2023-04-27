@@ -1,0 +1,12 @@
+.header {
+    position: fixed;
+    justify-content: center;
+    margin: 0px;
+    z-index: 1;
+    width: 100%;
+    max-width: 700px;
+    background: lightblue;
+    height: 70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
