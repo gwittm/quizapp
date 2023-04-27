@@ -72,10 +72,39 @@ main {
     position: absolute;
     top: -12px;
     right:20px;
-    background-color:transparent;
+    background-color: transparent;
     border-color: transparent;
     cursor: pointer;
 }
+
+
+.ribbon{
+    width: 0px;
+    height: 35px;
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+    border: solid 15px lightslategray;
+    border-bottom: solid 15px transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }  
+
+  .choose {
+    width: 0px;
+    height: 35px;
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+    border: solid 15px rgb(91, 91, 215);
+    border-bottom: solid 15px transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
 
 .card__answer {
     padding: 10px;
@@ -97,6 +126,7 @@ main {
     background-color: rgb(91, 91, 215);
     color:rgb(211, 211, 232);
 }
+
 .card__answer__toggle3{
     display: none;
     background-color: rgb(91, 91, 215);
