@@ -65,6 +65,8 @@ main {
   margin-left: 50px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .card:hover {
@@ -320,6 +322,18 @@ Rounded sliders */
   grid-area: "about";
 }
 
+.grid_darkmode {
+  border: solid 2px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.counter__box {
+  border: solid 2px;
+  margin: 10px;
+  padding: 10px;
+}
+
 .profile-icon {
   height: 80px;
   width: 80px;
@@ -339,4 +353,61 @@ Rounded sliders */
   padding: 10px;
 
   margin: 10px;
+}
+
+.switch {
+  height: 100px;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: var(--eggshell-white);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: var(--dark-green);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+[data-theme="dark"] {
+  --font-color: var(var(--eggshell-white) ; --bg-color: var(--dark-green));
 }
