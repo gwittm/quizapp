@@ -13,10 +13,19 @@
 
 @import "../components/header.css";
 
+:root {
+  --forest-green: #48594d;
+  --eggshell-white: #f0e2c4;
+  --dark-green: #192b1e;
+
+  --gap: 20px;
+}
+
 body {
-  background-color: white;
-  border: 2px solid;
-  color: rgb(91, 91, 215);
+  background-color: var(--forest-green);
+  max-width: 700px;
+  border: 3px solid;
+  color: var(--eggshell-white);
 }
 
 main {
@@ -27,11 +36,11 @@ main {
   position: fixed;
   justify-content: center;
   margin: 0px;
+  padding: 5px;
   z-index: 1;
-  width: 100%;
-  /*   max-width: 700px;
- */
-  background: lightblue;
+  width: 95%;
+  max-width: 700px;
+  background: var(--dark-green);
   height: 70px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -40,18 +49,19 @@ main {
 .header__heading {
   font-family: verdana;
   text-align: center;
-  color: rgb(91, 91, 215);
+  margin: 10px;
+  color: var(--eggshell-white);
 }
 
 .card {
   position: relative;
   border: solid;
-  border-color: rgb(91, 91, 215);
-  padding: 20px;
-  margin: 20px;
+  border-color: var(--eggshell-white);
+  padding: var(--gap);
+  margin: var(--gap);
   border-radius: 20px;
-  box-shadow: rgb(91, 91, 215) 0 3px 8px;
-  background-color: rgb(211, 211, 232);
+  background-color: var(--forest-green);
+  max-width: 700px;
   margin-left: 50px;
   display: flex;
   flex-direction: column;
@@ -60,12 +70,11 @@ main {
 .card:hover {
   position: relative;
   border: solid;
-  border-color: rgb(91, 91, 215);
   padding: 20px;
   margin: 20px;
   border-radius: 20px;
-  box-shadow: rgb(91, 91, 215) 0 3px 30px;
-  background-color: rgb(211, 211, 232);
+  box-shadow: var(--dark-green);
+  background-color: var(--dark-green);
   margin-left: 50px;
   display: flex;
   flex-direction: column;
@@ -93,7 +102,7 @@ main {
   background-color: transparent;
   position: absolute;
   right: 20px;
-  border: solid 15px lightslategray;
+  border: solid 15px var(--eggshell-white);
   border-bottom: solid 15px transparent;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -107,7 +116,7 @@ main {
   background-color: transparent;
   position: absolute;
   right: 20px;
-  border: solid 15px rgb(91, 91, 215);
+  border: solid 15px var(--dark-green);
   border-bottom: solid 15px transparent;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -130,14 +139,14 @@ main {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  border: solid rgb(91, 91, 215);
-  background-color: lightgray;
+  border: solid var(--dark-green);
+  background-color: var(--eggshell-white);
   color: rgb(91, 91, 215);
 }
 
 .card__answer:hover {
-  background-color: rgb(196, 124, 189);
-  color: purple;
+  background-color: var(--forest-green);
+  color: var(--eggshell-white);
 }
 
 .card__answer__toggle1 {
@@ -159,11 +168,11 @@ main {
 }
 
 .card__tag {
-  border: solid rgb(91, 91, 215);
+  border: solid var(--eggshell-white);
   padding: 5px;
   border-radius: 10px;
-  background-color: lightgray;
-  margin: 8px;
+  color: var--(--eggshell-white);
+  margin: 5px;
 }
 
 /* Footer */
@@ -171,7 +180,7 @@ main {
 .nav__footer {
   width: 100%;
   justify-content: space-around;
-  background-color: rgb(211, 211, 232);
+  background-color: var(--eggshell-white);
   padding: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -182,26 +191,26 @@ main {
 
 .footer__button {
   background-color: transparent;
-  border-color: white;
+  border-color: var(--forest-green);
   cursor: pointer;
 }
 
 .footer__button:hover {
-  background-color: rgb(91, 91, 215);
+  border: 5px dotted var(--dark-green);
 }
 
 .footer__button-current {
-  background-color: grey;
+  border: 5px solid var(--dark-green);
 }
 
 body.dark {
-  background-color: rgb(50, 51, 58);
-  color: white;
+  background-color: var(--dark-green);
+  color: var(var(--eggshell-white));
 }
 
 .card__answer:active {
   transform: scale(0.9);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  box-shadow: var(--forest-green) 0px 3px 6px;
 }
 
 /* Profile-Page

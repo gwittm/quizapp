@@ -1,13 +1,13 @@
 // Home -- Answer-Boxes Toggle
 //AnswerBox 1
-const answerBox1 = document.querySelector('[data-js="card__answer__toggle1"]');
+/* const answerBox1 = document.querySelector('[data-js="card__answer__toggle1"]');
 const toggleModeAnswer1 = document.querySelector(
   '[data-js="card__answer__toggle__button1"]'
 );
 
 toggleModeAnswer1.addEventListener("click", () =>
   answerBox1.classList.toggle("visible")
-);
+); */
 
 /* if (document.body.classList.contains("dark-theme")) {
     document.getElementById("theme-btn").innerHTML="Light Mode";
@@ -15,7 +15,7 @@ toggleModeAnswer1.addEventListener("click", () =>
     document.getElementById("theme-btn").innerHTML="Dark Mode";
   } */
 
-const answerBox2 = document.querySelector('[data-js="card__answer__toggle2"]');
+/* const answerBox2 = document.querySelector('[data-js="card__answer__toggle2"]');
 const toggleModeAnswer2 = document.querySelector(
   '/* [data-js="card__answer__toggle__button2"]'
 );
@@ -30,8 +30,7 @@ const toggleModeAnswer3 = document.querySelector(
 );
 
 toggleModeAnswer3.addEventListener("click", () => {
-  answerBox3.classList.toggle("visible");
-});
+  answerBox3.classList.toggle("visible"); */
 
 //Home Bookmarks Toggle
 const bookmarkButton1 = document.querySelector('[data-js="card__bookmark_1"]');
