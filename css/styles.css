@@ -136,7 +136,9 @@ main {
   color: var(--dark-green);
 }
 
-.card__answer__toggle1 {
+.card__answer__toggle1,
+.card__answer__toggle2,
+.card__answer__toggle3 {
   display: none;
 }
 
@@ -155,18 +157,6 @@ main {
   background-color: var(--forest-green);
   color: var(--eggshell-white);
 }
-
-/* .card__answer__toggle2 {
-  display: none;
-  background-color: rgb(91, 91, 215);
-  color: rgb(211, 211, 232);
-}
-
-.card__answer__toggle3 {
-  display: none;
-  background-color: rgb(91, 91, 215);
-  color: rgb(211, 211, 232);
-} */
 
 .card__tag {
   border: solid var(--eggshell-white);

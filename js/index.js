@@ -8,30 +8,47 @@ const toggleModeAnswer1 = document.querySelector(
 toggleModeAnswer1.addEventListener("click", () => {
   answerBox1.classList.toggle("visible"),
     answerBox1.classList.toggle("card__answer__toggle1");
+
+  if (answerBox1.classList.contains("visible")) {
+    toggleModeAnswer1.textContent = "Hide answer";
+  } else {
+    toggleModeAnswer1.textContent = "Show answer";
+  }
 });
 
-/* if (document.body.classList.contains("dark-theme")) {
-    document.getElementById("theme-btn").innerHTML="Light Mode";
-  } else if (document.body.classList.contains("light-theme")) {
-    document.getElementById("theme-btn").innerHTML="Dark Mode";
-  } */
-
-/* const answerBox2 = document.querySelector('[data-js="card__answer__toggle2"]');
+//Answer2
+const answerBox2 = document.querySelector('[data-js="card__answer__toggle2"]');
 const toggleModeAnswer2 = document.querySelector(
-  '/* [data-js="card__answer__toggle__button2"]'
+  '[data-js="card__answer__toggle__button2"]'
 );
 
 toggleModeAnswer2.addEventListener("click", () => {
   answerBox2.classList.toggle("visible");
+  answerBox2.classList.toggle("card__answer__toggle2");
+
+  if (answerBox2.classList.contains("visible")) {
+    toggleModeAnswer2.textContent = "Hide answer";
+  } else {
+    toggleModeAnswer2.textContent = "Show answer";
+  }
 });
 
+//Answe3
 const answerBox3 = document.querySelector('[data-js="card__answer__toggle3"]');
 const toggleModeAnswer3 = document.querySelector(
   '[data-js="card__answer__toggle__button3"]'
 );
 
 toggleModeAnswer3.addEventListener("click", () => {
-  answerBox3.classList.toggle("visible"); */
+  answerBox3.classList.toggle("visible");
+  answerBox3.classList.toggle("card__answer__toggle3");
+
+  if (answerBox3.classList.contains("visible")) {
+    toggleModeAnswer3.textContent = "Hide answer";
+  } else {
+    toggleModeAnswer3.textContent = "Show answer";
+  }
+});
 
 //Home Bookmarks Toggle
 const bookmarkButton1 = document.querySelector('[data-js="card__bookmark_1"]');
@@ -80,3 +97,9 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
+
+/* if (document.body.classList.contains("dark-theme")) {
+    document.getElementById("theme-btn").innerHTML="Light Mode";
+  } else if (document.body.classList.contains("light-theme")) {
+    document.getElementById("theme-btn").innerHTML="Dark Mode";
+  } */
