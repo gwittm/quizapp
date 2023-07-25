@@ -127,12 +127,17 @@ main {
 }
 
 .card__answer {
-  padding: 10px;
+  padding: 15px;
   margin: 15px;
   border-radius: 10px;
   width: 150px;
   align-self: center;
   cursor: pointer;
+  color: var(--dark-green);
+}
+
+.card__answer__toggle1 {
+  display: none;
 }
 
 .visible {
@@ -140,10 +145,10 @@ main {
   align-self: center;
   padding: 10px;
   margin: 10px;
+  width: 60vw;
   border-radius: 10px;
-  border: solid var(--dark-green);
   background-color: var(--eggshell-white);
-  color: rgb(91, 91, 215);
+  color: var(--dark-green);
 }
 
 .card__answer:hover {
@@ -151,13 +156,7 @@ main {
   color: var(--eggshell-white);
 }
 
-.card__answer__toggle1 {
-  display: none;
-  background-color: rgb(91, 91, 215);
-  color: rgb(211, 211, 232);
-}
-
-.card__answer__toggle2 {
+/* .card__answer__toggle2 {
   display: none;
   background-color: rgb(91, 91, 215);
   color: rgb(211, 211, 232);
@@ -167,7 +166,7 @@ main {
   display: none;
   background-color: rgb(91, 91, 215);
   color: rgb(211, 211, 232);
-}
+} */
 
 .card__tag {
   border: solid var(--eggshell-white);
@@ -242,7 +241,6 @@ body.dark {
 /*   height: 10px;
   width: 30px;
 } */
-*/
 
 /* Hide default HTML checkbox */
 /* .switch input {
@@ -290,7 +288,7 @@ background-color: #2196F3;
     transform: translateX(26px);
   }
 Rounded sliders */
- /*  .slider.round {
+/*  .slider.round {
     border-radius: 10px;
   }
   
@@ -298,9 +296,7 @@ Rounded sliders */
     border-radius: 50%;
   }  */
 
-
-
-  .body__profile {
+.body__profile {
   display: grid;
   grid-template-areas:
     "nav icon name"

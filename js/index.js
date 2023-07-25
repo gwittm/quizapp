@@ -1,13 +1,14 @@
 // Home -- Answer-Boxes Toggle
 //AnswerBox 1
-/* const answerBox1 = document.querySelector('[data-js="card__answer__toggle1"]');
+const answerBox1 = document.querySelector('[data-js="card__answer__toggle1"]');
 const toggleModeAnswer1 = document.querySelector(
   '[data-js="card__answer__toggle__button1"]'
 );
 
-toggleModeAnswer1.addEventListener("click", () =>
-  answerBox1.classList.toggle("visible")
-); */
+toggleModeAnswer1.addEventListener("click", () => {
+  answerBox1.classList.toggle("visible"),
+    answerBox1.classList.toggle("card__answer__toggle1");
+});
 
 /* if (document.body.classList.contains("dark-theme")) {
     document.getElementById("theme-btn").innerHTML="Light Mode";
