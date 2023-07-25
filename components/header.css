@@ -1,4 +1,6 @@
-.header {
+
+
+/* .header {
     position: fixed;
     justify-content: center;
     margin: 0px;
@@ -8,5 +10,10 @@
     background: lightblue;
     height: 70px;
     border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
+    border-bottom-right-radius: 20px; }
+ 
+ .header__heading {
+     font-family: verdana;
+     text-align: center;
+     color: rgb(91, 91, 215);
+ } */
